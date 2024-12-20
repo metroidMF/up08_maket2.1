@@ -20,6 +20,7 @@
 
 body {
   display: flex;
+  width: 1440px;
   padding-top: 30px;
   flex-direction: column;
   align-items: center;
@@ -34,14 +35,12 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
-  margin-left: 22px;
 }
 h1 {
   font-size: 66px;
   font-weight: 500;
   text-transform: capitalize;
   width: 530px;
-  margin-left: 22px;
 }
 h2 {
   text-align: center;
@@ -61,19 +60,11 @@ header {
   width: 1171px;
   justify-content: space-between;
   align-items: center;
-  margin-top: 25px;
-  margin-left: 37px;
 }
 .nav ul {
   display: flex;
   align-items: center;
   gap: 59px;
-}
-.nav .orange {
-  color: #ff6838;
-}
-.nav li{
-  cursor: pointer;
 }
 header h2 {
   color: #363853;
@@ -85,12 +76,6 @@ header h2 {
   color: #363853;
   font-size: 18px;
   font-weight: 400;
-}
-.nav a {
-  color: #363853;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
 }
 .button {
   width: 120px;
@@ -104,15 +89,12 @@ header h2 {
   font-size: 18px;
   font-weight: 400;
   cursor: pointer;
-  margin-left: 22px;
 }
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  align-self: stretch;      
-  margin-top: 25px;
-  margin-left: -24px;
+  align-self: stretch;
 }
 .h {
   display: flex;
@@ -123,8 +105,6 @@ header h2 {
   font-size: 20px;
   font-weight: 400;
   text-transform: capitalize;
-  margin-top: -102px;
-  margin-left: 37px;
 }
 .h p {
   line-height: 30px;
@@ -150,8 +130,7 @@ header h2 {
   flex-direction: column;
   align-items: center;
   gap: 45px;
-  margin-top: 20px;
-  margin-left: -18px;
+  margin: 0 auto;
 }
 .selectfood {
   display: flex;
@@ -177,7 +156,6 @@ header h2 {
   align-items: center;
   gap: 29px;
   align-self: stretch;
-  margin-top: -9px;
 }
 .burger {
   display: flex;
@@ -230,7 +208,7 @@ header h2 {
   width: 1244px;
   align-items: center;
   gap: 137px;
-  margin-left: -31px;
+  margin: 0 auto;
 }
 .stay div {
   display: flex;
@@ -271,7 +249,7 @@ header h2 {
   flex-direction: column;
   align-items: center;
   gap: 37px;
-  margin-top: 44px;
+  margin: 0 auto;
 }
 .foods {
   display: flex;
@@ -332,8 +310,6 @@ header h2 {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin-top: 79px;
-  margin-left: 4px;
 }
 .m_left {
   display: flex;
@@ -354,8 +330,6 @@ header h2 {
   flex-direction: column;
   align-items: center;
   gap: 60px;
-  margin-top: 89px;
-  margin-left: 4px;
 }
 .cl {
   display: flex;
@@ -426,7 +400,6 @@ header h2 {
   align-items: center;
   color: #fff;
   gap: 31px;
-  margin-top: 40px;
 }
 .text2 {
   display: flex;
@@ -484,8 +457,6 @@ footer {
   flex-direction: column;
   align-items: center;
   gap: 25px;
-  margin-top: 7px;
-  margin-left: 8px;
 }
 .footer_nav {
   display: flex;
@@ -505,7 +476,6 @@ footer {
   font-size: 18px;
   line-height: 49px;
   letter-spacing: 0.18px;
-  cursor: pointer;
 }
 footer hr {
   width: 100%;
@@ -527,6 +497,28 @@ footer ul {
   align-items: center;
   gap: 52px;
 }
+.menu {
+  display: none;
+}
+.header.active {
+  display: flex;
+  position: absolute;
+  width: 255px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #f9faff;
+  padding: 20px;
+  right: 25px;
+  top: 100px;
+  box-shadow: 0px 10px 10px 0px rgba(255, 104, 56, 0.19);
+  border-radius: 15px;
+}
+.nav a {x
+  color: #363853;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+}
 .footer_nav ul li a{
   color: #363853;
   font-size: 18px;
@@ -538,4 +530,134 @@ footer ul {
   font-size: 13px;
   font-weight: 400;
   text-decoration: none;
+}
+
+@media screen and (max-width: 720px) {
+  /* * {
+    border: red 1px solid;
+  } */
+  body {
+    width: 100%;
+    gap: 50px;
+  }
+  h1 {
+    font-size: 40px;
+    width: 100%;
+  }
+  header,
+  main,
+  .nav,
+  .popular,
+  .burgers,
+  .stay,
+  .topfood,
+  .mobile,
+  .clients,
+  .subs,
+  .h,
+  footer {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .menu {
+    display: block;
+  }
+  .h div {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .nav div {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: max-content;
+  }
+  .nav ul {
+    display: none;
+  }
+  .selectfood {
+    flex-wrap: wrap;
+  }
+  .selectfood button {
+    width: 120px;
+    height: 54px;
+  }
+  .selectfood button img {
+    width: 30px;
+  }
+  .burgers,
+  .stay div,
+  .stay ul {
+    width: 100%;
+  }
+  .burger {
+    display: none;
+    margin: 0 auto;
+  }
+  .burger1 {
+    display: flex;
+  }
+  .imgg,
+  .text img {
+    display: none;
+  }
+  .top {
+    width: 100%;
+  }
+  .top img {
+    width: 100%;
+  }
+  .top_info h4 {
+    font-size: 20px;
+  }
+  .top_info {
+    width: 100%;
+  }
+  .top_time p {
+    font-size: 15px;
+  }
+  .top_time img,
+  .top_time .button img {
+    width: inherit;
+  }
+  .cl {
+    flex-direction: column;
+  }
+  .cl img {
+    width: 100%;
+  }
+  .c_right {
+    width: 100%;
+  }
+  .name {
+    width: 100%;
+  }
+  .text2 {
+    width: 100%;
+  }
+  .text2 h2 {
+    font-size: 30px;
+  }
+  .text2 p {
+    font-size: 15px;
+  }
+  .search {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    padding: 10px;
+  }
+  .search input {
+    padding: 10px;
+    width: 100%;
+  }
+  .search div {
+    width: 100%;
+  }
+  .footer_nav,
+  .footer {
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+  }
 }

@@ -513,25 +513,6 @@ footer ul {
   box-shadow: 0px 10px 10px 0px rgba(255, 104, 56, 0.19);
   border-radius: 15px;
 }
-.nav a {x
-  color: #363853;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-}
-.footer_nav ul li a{
-  color: #363853;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-}
-.footer li a {
-  color: #363853;
-  font-size: 13px;
-  font-weight: 400;
-  text-decoration: none;
-}
-
 @media screen and (max-width: 720px) {
   /* * {
     border: red 1px solid;
